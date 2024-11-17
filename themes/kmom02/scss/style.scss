@@ -1,0 +1,128 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+body {
+  background-color: $background-color;
+}
+
+* {
+  color: $font-color;
+}
+
+.main {
+  flex: 1 0 auto;
+  padding: 15px;
+}
+
+.header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffe4b5;
+  text-align: center;
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffe4b5;
+  text-align: center;
+}
+
+.header,
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title,
+.logo {
+  padding: 3em;
+}
+
+@media (max-width: 767px) {
+  .title,
+  .logo {
+    padding: 1em 1em 1em 0;
+  }
+
+  .title {
+    min-width: 50%;
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+}
+
+.title * {
+  color: #111;
+}
+
+.title p {
+  font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+}
+
+.footer a {
+  color: #222;
+}
+
+.footer .social {
+  font-size: 2rem;
+}
+
+/* Typografy */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  color: #444;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
